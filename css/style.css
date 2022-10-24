@@ -5,6 +5,10 @@ a {
     font-weight     : 600;
 }
 
+/* -------------------------------------------------
+    PC
+--------------------------------------------------*/
+
 .wrapper {
     max-width : 900px;
     margin    : 0 auto;
@@ -38,8 +42,12 @@ a {
 
 
 /* メイン */
-.main-visual img {
-    max-width: 100%;
+.main-visual {
+    background-image  : url(../img/main-vsual.png);
+    background-size   : cover;
+    background-repeat : no-repeat;
+    width             : 100%;
+    height            : 400px;
 }
 #about .flex .img {
     width : 45%;
@@ -72,6 +80,7 @@ a {
 }
 #inquiries form .text-box {
     width         : 500px;
+    margin-bottom : 30px;
     padding       : 10px 5px;
     border        : 2px solid lightgray;
     border-radius : 18px;
@@ -80,7 +89,7 @@ a {
 #inquiries form .button {
     width            : 350px;
     height           : 50px;
-    margin           : 30px auto 80px auto;
+    margin           : 0 auto 80px auto;
     border           : none;
     border-radius    : 5px;
     background-color : rgb(237, 116, 124);
@@ -101,4 +110,81 @@ a {
     text-align    : end;
     margin-bottom : 30px;
     color         : black;
+}
+
+
+
+/* -------------------------------------------------
+    SP
+--------------------------------------------------*/
+@media screen and (max-width :37.5rem) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+        margin    : 0 auto;
+    }
+    .flex {
+        flex-direction  : column;
+        align-items : center;
+    }
+    .section-title {
+        margin-bottom : 25px;
+    }
+
+    /* ヘッダー */
+    #header {
+        flex-direction  : column;
+        justify-content : space-around;
+    }
+    #header .logo a {
+        font-size   : 1.5rem;
+        font-weight : 700;
+    }
+
+    /* メイン */
+    .main-visual {
+        background-image  : url(../img/main-vsual-nontitle.png);
+        height            : 550px;
+    }
+    #about .flex .img {
+        width         : 100%;
+        margin-bottom : 20px;
+    }
+    #about .flex .text {
+        font-weight : 400;
+    }
+    #about .flex .text .none {
+        display : none;
+    }
+    #coas-list .flex .content {
+        width : 100%;
+    }
+    #coas-list .flex .content img {
+        margin-top    : 20px;
+        margin-bottom : 3px;
+    }
+    #coas-list .flex .content .title {
+        font-weight : 400;
+    }
+    #coas-list .flex .content im:first-child {
+        margin-top    : 0;
+    }
+    #inquiries form .text-box {
+        width         : 90%;
+        margin-top    : 30px;
+        padding       : 15px 10px;
+        border        : 4px solid lightgray;
+        border-radius : 23px;
+    }
+    #inquiries form .button {
+        width  : 95%;
+        height : 70px;
+    }
+    #inquiries form p {
+        font-weight : 400;
+    }
+    #footer p {
+        text-align : center;
+        font-size  : 0.5rem;
+    }
 }
