@@ -1,0 +1,104 @@
+/* 設定 */
+a {
+    text-decoration : none;
+    color           : black;
+    font-weight     : 600;
+}
+
+.wrapper {
+    max-width : 900px;
+    margin    : 0 auto;
+}
+.flex {
+    display         : flex;
+    justify-content : space-between;
+}
+.section-title {
+    text-align    : center;
+    margin        : 70px 0 40px 0;
+    font-size     : 1.5rem;
+    font-weight   : 700;
+}
+
+/* ヘッダー */
+#header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    height          : 80px;
+}
+#header .logo a {
+    font-size : 1.25rem;
+    font-weight : 600;
+}
+#header nav .list {
+    display : flex;
+    gap     : 25px;
+}
+
+
+/* メイン */
+.main-visual img {
+    max-width: 100%;
+}
+#about .flex .img {
+    width : 45%;
+}
+#about .flex .img img {
+    max-width : 100%;
+}
+#about .flex .text {
+    line-height : 1.5;
+    font-weight : 600;
+}
+#coas-list .flex .content {
+    width : 30%;
+}
+#coas-list .flex .content img {
+    max-width     : 100%;
+    margin-bottom : 10px;
+}
+#coas-list .flex .content .title {
+    font-weight : 550;
+}
+#inquiries form p {
+    text-align  : center;
+    font-weight : 600;
+}
+#inquiries form input {
+    display      : block;
+    margin-left  : auto;
+    margin-right : auto;
+}
+#inquiries form .text-box {
+    width         : 500px;
+    padding       : 10px 5px;
+    border        : 2px solid lightgray;
+    border-radius : 18px;
+    color         : lightgray;
+}
+#inquiries form .button {
+    width            : 350px;
+    height           : 50px;
+    margin           : 30px auto 80px auto;
+    border           : none;
+    border-radius    : 5px;
+    background-color : rgb(237, 116, 124);
+    color            : white;
+    font-size        : 1.1rem;
+    font-weight      : 600;
+}
+
+/* フッター */
+#footer ::before {
+    display       : block;
+    content       : "";
+    width         : 100%;
+    margin-bottom : 15px;
+    border        : 1px solid lightgray;
+}
+#footer p {
+    text-align    : end;
+    margin-bottom : 30px;
+    color         : black;
+}
