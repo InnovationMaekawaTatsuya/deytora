@@ -48,26 +48,58 @@ a {
     background-color  : rgb(183, 233, 228);
 }
 .main-visual {
-    background-image  : url(../img/main-vsual.png);
-    object-position   : center top;
-    background-size   : cover;
-    background-repeat : no-repeat;
-    max-width         : 1600px;
-    height            : 400px;
-    margin             : 0 auto;
+    background-image    : url(../img/main-vsual-nontitle.png);
+    background-position : center top;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+    max-width           : 1600px;
+    height              : 100%;
+    margin              : 0 auto;
+    position            : relative;
 }
-#about .flex div {
+.main-visual .text-area {
+    width             : 100%;
+    height            : 50%;
+    position          : absolute;
+    top               : 50%; 
+    left              : 50%;
+    transform         : translate(-50%, -50%);
+    -webkit-transform : translate(-50%, -50%);
+    -ms-transform     : translate(-50%, -50%);
+}
+.main-visual .text-area .title,
+.main-visual .text-area .description {
+    text-align  : center;
+    line-height : 1.5;
+    font-weight : 700;
+}
+.main-visual .text-area .title {
+    font-size : 2.4rem;
+}
+.main-visual .text-area .title .none {
+    display : none;
+}
+.main-visual .text-area .description {
+    font-size : 1.3rem;
+}
+#about {
+    padding : 0 1.5rem;
+}
+#about .flex .img-area {
     width : 45%;
 }
-#about .flex div img {
+#about .flex .img-area img {
     max-width : 100%;
 }
-#about .flex .text {
+#about .flex .text-area {
+    width : 45%;
+}
+#about .flex .text-area p {
     line-height : 1.5;
     font-weight : 600;
 }
-#about .flex .text .text-block {
-    display : block;
+#coas-list {
+    padding : 0 1.5rem;
 }
 #coas-list .flex .content {
     width : 30%;
@@ -75,6 +107,9 @@ a {
 #coas-list .flex .content img {
     max-width     : 100%;
     margin-bottom : 0.625rem;
+}
+#inquiries {
+    padding : 0 1.5rem;
 }
 #inquiries form p {
     text-align  : center;
@@ -105,6 +140,9 @@ a {
 }
 
 /* フッター */
+#footer {
+    padding : 0 1.5rem;
+}
 #footer ::before {
     display       : block;
     content       : "";
@@ -152,14 +190,29 @@ a {
         height : 550px;
     }
     .main-visual {
-        background-image  : url(../img/main-vsual-nontitle.png);
-        height            : 550px;
+        background-position : left top;
+        height              : 550px;
     }
-    #about .flex div {
+    .main-visual .text-area .title {
+        margin-bottom : 2rem;
+        font-size     : 2.0rem;
+    }
+    .main-visual .text-area .title .none {
+        display : block;
+    }
+    .main-visual .text-area .description {
+        font-size   : 0.8rem;
+        font-weight : 400;
+    }
+    #about .flex .img-area,
+    #about .flex .text-area {
+        width : 100%;
+    }
+    #about .flex .img-area img {
         width         : 100%;
         margin-bottom : 1.25rem;
     }
-    #about .flex .text {
+    #about .flex .text-area p {
         font-weight : 400;
     }
     #about .flex .text .none {
