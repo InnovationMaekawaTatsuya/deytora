@@ -1,0 +1,244 @@
+/* 設定 */
+a {
+    text-decoration : none;
+    color           : black;
+    font-weight     : 600;
+}
+
+/* -------------------------------------------------
+    PC
+--------------------------------------------------*/
+
+.wrapper {
+    max-width : 900px;
+    margin    : 0 auto;
+}
+.flex {
+    display         : flex;
+    justify-content : space-between;
+}
+.section-title {
+    text-align    : center;
+    margin        : 4.375rem 0 2.5rem 0;
+    font-size     : 1.5rem;
+    font-weight   : 700;
+}
+
+/* ヘッダー */
+#header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    height          : 80px;
+}
+#header .logo a {
+    font-size   : 1.25rem;
+    font-weight : 600;
+}
+#header nav .list {
+    display : flex;
+    gap     : 25px;
+}
+
+
+/* メイン */
+.main-visual-box {
+    max-width         : 100%;
+    height            : 400px;
+    background-color  : rgb(183, 233, 228);
+}
+.main-visual {
+    display             : flex;
+    align-items         : center;
+    background-image    : url(../img/main-vsual-nontitle.png);
+    background-position : center top;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+    max-width           : 1600px;
+    height              : 100%;
+    margin              : 0 auto;
+}
+.main-visual .text-area {
+    width             : 100%;
+    height            : 50%;
+}
+.main-visual .text-area .title,
+.main-visual .text-area .description {
+    text-align  : center;
+    line-height : 1.5;
+    font-weight : 700;
+}
+.main-visual .text-area .title {
+    font-size : 2.4rem;
+}
+.main-visual .text-area .title .none {
+    display : none;
+}
+.main-visual .text-area .description {
+    font-size : 1.3rem;
+}
+#about {
+    padding : 0 1.5rem;
+}
+#about .flex .img-area {
+    width : 45%;
+}
+#about .flex .img-area img {
+    max-width : 100%;
+}
+#about .flex .text-area {
+    width : 45%;
+}
+#about .flex .text-area p {
+    line-height : 1.5;
+    font-weight : 600;
+}
+#coas-list {
+    padding : 0 1.5rem;
+}
+#coas-list .flex .content {
+    width : 30%;
+}
+#coas-list .flex .content img {
+    max-width     : 100%;
+    margin-bottom : 0.625rem;
+}
+#inquiries {
+    padding : 0 1.5rem;
+}
+#inquiries form p {
+    text-align  : center;
+}
+#inquiries form input {
+    display      : block;
+    margin-left  : auto;
+    margin-right : auto;
+}
+#inquiries form .text-box {
+    width         : 500px;
+    margin-bottom : 1.875rem;
+    padding       : 0.625rem 0.3125rem;
+    border        : 2px solid lightgray;
+    border-radius : 18px;
+    color         : lightgray;
+}
+#inquiries form .button {
+    width            : 350px;
+    height           : 50px;
+    margin           : 0 auto 5rem auto;
+    border           : none;
+    border-radius    : 5px;
+    background-color : rgb(237, 116, 124);
+    color            : white;
+    font-size        : 1.1rem;
+    font-weight      : 600;
+}
+
+/* フッター */
+#footer {
+    padding : 0 1.5rem;
+}
+#footer ::before {
+    display       : block;
+    content       : "";
+    width         : 100%;
+    margin-bottom : 0.9375rem;
+    border        : 1px solid lightgray;
+}
+#footer p {
+    text-align    : end;
+    margin-bottom : 1.875rem;
+    color         : black;
+}
+
+
+
+/* -------------------------------------------------
+    SP
+--------------------------------------------------*/
+@media screen and (max-width :600px) {
+    /* 設定 */
+    .wrapper {
+        max-width : 90%;
+        margin    : 0 auto;
+    }
+    .flex {
+        flex-direction  : column;
+        align-items : center;
+    }
+    .section-title {
+        margin-bottom : 1.5625rem;
+    }
+
+    /* ヘッダー */
+    #header {
+        flex-direction  : column;
+        justify-content : space-around;
+    }
+    #header .logo a {
+        font-size   : 1.5rem;
+        font-weight : 700;
+    }
+
+    /* メイン */
+    .main-visual-box {
+        height : 550px;
+    }
+    .main-visual {
+        background-position : left top;
+        height              : 550px;
+    }
+    .main-visual .text-area .title {
+        margin-bottom : 2rem;
+        font-size     : 2rem;
+    }
+    .main-visual .text-area .title .none {
+        display : block;
+    }
+    .main-visual .text-area .description {
+        font-size   : 0.8rem;
+        font-weight : 400;
+    }
+    #about .flex .img-area,
+    #about .flex .text-area {
+        width : 100%;
+    }
+    #about .flex .img-area img {
+        width         : 100%;
+        margin-bottom : 1.25rem;
+    }
+    #about .flex .text-area p {
+        font-weight : 400;
+    }
+    #about .flex .text .none {
+        display : none;
+    }
+    #coas-list .flex {
+        row-gap : 2rem;
+    }
+    #coas-list .flex .content {
+        width : 100%;
+    }
+    #coas-list .flex .content img {
+        margin-top    : 1.25rem;
+        margin-bottom : 0.1875rem;
+    }
+    #coas-list .flex .content img:first-child {
+        margin-top    : 0;
+    }
+    #inquiries form .text-box {
+        width         : 90%;
+        margin-top    : 1.25rem;
+        padding       : 0.9375rem 0.625rem;
+        border        : 4px solid lightgray;
+        border-radius : 23px;
+    }
+    #inquiries form .button {
+        width  : 95%;
+        height : 70px;
+    }
+    #footer p {
+        text-align : center;
+        font-size  : 0.5rem;
+    }
+}
