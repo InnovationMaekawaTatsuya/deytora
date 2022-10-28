@@ -48,6 +48,8 @@ a {
     background-color  : rgb(183, 233, 228);
 }
 .main-visual {
+    display             : flex;
+    align-items         : center;
     background-image    : url(../img/main-vsual-nontitle.png);
     background-position : center top;
     background-size     : cover;
@@ -55,17 +57,10 @@ a {
     max-width           : 1600px;
     height              : 100%;
     margin              : 0 auto;
-    position            : relative;
 }
 .main-visual .text-area {
     width             : 100%;
     height            : 50%;
-    position          : absolute;
-    top               : 50%; 
-    left              : 50%;
-    transform         : translate(-50%, -50%);
-    -webkit-transform : translate(-50%, -50%);
-    -ms-transform     : translate(-50%, -50%);
 }
 .main-visual .text-area .title,
 .main-visual .text-area .description {
@@ -195,7 +190,7 @@ a {
     }
     .main-visual .text-area .title {
         margin-bottom : 2rem;
-        font-size     : 2.0rem;
+        font-size     : 2rem;
     }
     .main-visual .text-area .title .none {
         display : block;
@@ -216,8 +211,10 @@ a {
         font-weight : 400;
     }
     #about .flex .text .none {
-        /* white-space : nowrap; */
         display : none;
+    }
+    #coas-list .flex {
+        row-gap : 2rem;
     }
     #coas-list .flex .content {
         width : 100%;
